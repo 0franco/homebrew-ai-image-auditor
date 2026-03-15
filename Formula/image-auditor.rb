@@ -5,21 +5,21 @@
 class ImageAuditor < Formula
   desc "Find Lighthouse image issues instantly. Audits CLS, lazy loading, formats, and responsive images across your codebase."
   homepage "https://github.com/0franco/image-auditor"
-  version "0.1.7"
+  version "0.2.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/0franco/image-auditor/releases/download/v0.1.7/image-auditor_darwin_amd64.tar.gz"
-    sha256 "90efdf81a3d02ab0cde0c363a6f63b009e0e379d2a87fc2f9ed7e83aa04e071a"
+    url "https://github.com/0franco/image-auditor/releases/download/v0.2.0/image-auditor_darwin_amd64.tar.gz"
+    sha256 "e7e818de405722fcf4fd8aafa80284d5b3a50ac5f7aaf68f96f7955577a9c2d2"
 
     define_method(:install) do
       bin.install "image-auditor"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/0franco/image-auditor/releases/download/v0.1.7/image-auditor_darwin_arm64.tar.gz"
-    sha256 "33427ad2ef504a0bbc63ad56c91931ff0ba420896c125a77e453cefa9718e764"
+    url "https://github.com/0franco/image-auditor/releases/download/v0.2.0/image-auditor_darwin_arm64.tar.gz"
+    sha256 "dd81d5b606323a91ded360bef02b8bd95812fb9030661fe40f958cc512473d7c"
 
     define_method(:install) do
       bin.install "image-auditor"
