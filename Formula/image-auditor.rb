@@ -5,21 +5,21 @@
 class ImageAuditor < Formula
   desc "Finds & AI-fixes Lighthouse image issues (CLS, lazy loading, WebP, srcset) across your entire codebase in seconds."
   homepage "https://github.com/0franco/image-auditor"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0franco/image-auditor/releases/download/v0.2.3/image-auditor_darwin_amd64.tar.gz"
-      sha256 "2efe121f048aa6257bf93cbc83632e5b9a767f014819b3a944cb77cf790d1177"
+      url "https://github.com/0franco/image-auditor/releases/download/v0.2.4/image-auditor_darwin_amd64.tar.gz"
+      sha256 "2fe3ce42fe2c73429f9d501fbd31f646e8d863137e302bbb726324faf0c01ebc"
 
       define_method(:install) do
         bin.install "image-auditor"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0franco/image-auditor/releases/download/v0.2.3/image-auditor_darwin_arm64.tar.gz"
-      sha256 "1e7936c70d82b23a58d5e4c5432c46fd4f3947b5e6e48e67a624fad79ac79e01"
+      url "https://github.com/0franco/image-auditor/releases/download/v0.2.4/image-auditor_darwin_arm64.tar.gz"
+      sha256 "5d8868c08e1533e1d6cb7ab9de31a00178fd7f555ae079ab68b598e1847107ec"
 
       define_method(:install) do
         bin.install "image-auditor"
@@ -29,15 +29,15 @@ class ImageAuditor < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0franco/image-auditor/releases/download/v0.2.3/image-auditor_linux_amd64.tar.gz"
-      sha256 "1a5b734d97a58f4787dada6c6f585336c6cd5aeec53da8f6bcae5870ff856b95"
+      url "https://github.com/0franco/image-auditor/releases/download/v0.2.4/image-auditor_linux_amd64.tar.gz"
+      sha256 "a4b1c5dbb7e7ae3191f8cf512e6fdd3301add0d1791f7fe0a5486ffa9d3ae87f"
       define_method(:install) do
         bin.install "image-auditor"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0franco/image-auditor/releases/download/v0.2.3/image-auditor_linux_arm64.tar.gz"
-      sha256 "b2365815d2a7320f40b58bff0a9a7f3621e9a1b8d9b0a715c12e1d8d8c766223"
+      url "https://github.com/0franco/image-auditor/releases/download/v0.2.4/image-auditor_linux_arm64.tar.gz"
+      sha256 "2c36df84fe3c895396e2dd38b0ceedda0cd100eda2eb8249f86f9963bc816fb3"
       define_method(:install) do
         bin.install "image-auditor"
       end
